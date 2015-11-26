@@ -93,3 +93,10 @@ TAG:
 	@while [ -z "$$TAG" ]; do \
 		read -r -p "Enter the tag you wish to associate with this container [TAG]: " TAG; echo "$$TAG">>TAG; cat TAG; \
 	done ;
+
+test: clean build clean
+
+benchmark:
+	/usr/bin/time -v nice ionice -c3 make test
+
+time: benchmark

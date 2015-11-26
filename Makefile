@@ -56,10 +56,18 @@ node01:
 	swarm-agent-01
 	@touch node01
 
+env:
+	docker-machine env --swarm swarm-master
+
+localenv:
+	docker-machine env local
+
 info:
 	$(eval DOCKER_ENV := $(shell docker-machine env --swarm swarm-master|sed 's/export//g'))
 	$(DOCKER_ENV) docker info
 	$(DOCKER_ENV) docker ps -a
+
+hello-world: helloworld
 
 helloworld:
 	$(eval DOCKER_ENV := $(shell docker-machine env --swarm swarm-master|sed 's/export//g'))

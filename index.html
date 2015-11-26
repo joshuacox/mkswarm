@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Mkswarm by joshuacox</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Mkswarm</h1>
+        <h2>Make a docker swarm quickly</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/joshuacox/mkswarm/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/joshuacox/mkswarm/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/joshuacox/mkswarm" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="mkswarm" class="anchor" href="#mkswarm" aria-hidden="true"><span class="octicon octicon-link"></span></a>mkSwarm</h1>
+
+<p>Make a docker swarm quickly</p>
+
+<p>This was built while I followed along with the official <a href="https://docs.docker.com/swarm/install-w-machine/%20%E2%80%9CSwarm%20Install%20with%20Machine%E2%80%9D">walkthrough</a></p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>make
+virtuabox
+docker-machine</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>To build a local swarm simply:</p>
+
+<pre><code>make build
+</code></pre>
+
+<p>try out the hello world:</p>
+
+<pre><code>make helloworld
+</code></pre>
+
+<p>show the environment variables necessary to login to the swarm</p>
+
+<pre><code>make env
+</code></pre>
+
+<p>show the environment variables necessary to login to the docker in a local VM</p>
+
+<pre><code>make localenv
+</code></pre>
+
+<p>then when you are finished:</p>
+
+<pre><code>make clean
+</code></pre>
+
+<h2>
+<a id="benchmark-it" class="anchor" href="#benchmark-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Benchmark it!</h2>
+
+<p>care to see how fast your machine is at doing these tasks?</p>
+
+<pre><code>make benchmark
+</code></pre>
+
+<p>My laptop just pulled a 4:09, feel free to post to this <a href="https://github.com/joshuacox/mkswarm/issues/1%20%E2%80%9Cboasting%20issue%E2%80%9D">issue</a> boasting your amazing times and what storage medium your were using etc</p>
+
+<pre><code>Elapsed (wall clock) time (h:mm:ss or m:ss): 4:09.64
+</code></pre>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-69335315-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
